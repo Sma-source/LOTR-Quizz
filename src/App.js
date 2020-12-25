@@ -26,7 +26,9 @@ function App() {
       <h1>LOTR Quizz app</h1>
 
       {showScore ? (
-        <div className="score-section">You scored 1 out of {data.length}</div>
+        <div className="score-section">
+          You {score} 1 out of {data.length}
+        </div>
       ) : (
         <>
           <div className="question-section">
