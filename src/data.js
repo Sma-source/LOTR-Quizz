@@ -1,4 +1,4 @@
-export default data = [
+const data = [
   {
     questionText: "What is the capital of France?",
     answerOptions: [
@@ -36,3 +36,5 @@ export default data = [
     ],
   },
 ];
+
+export default data;
