@@ -3,7 +3,7 @@ import "./App.css";
 import data from "./data";
 
 function App() {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [currentQuestion, setCurrentQuestion] = useState(1);
   return (
     <div className="App">
       <h1>LOTR Quizz app</h1>
@@ -16,10 +16,12 @@ function App() {
             <div className="question-count">
               <span>Question 1</span>/{data.length}
             </div>
-            <div className="question-text">{data[0].questionText}</div>
+            <div className="question-text">
+              {data[currentQuestion].questionText}
+            </div>
           </div>
           <div className="answer-section">
-            {data[0].answerOptions.map((answer, index) => {
+            {data[currentQuestion].answerOptions.map((answer, index) => {
               return <button key={index}>{answer.answerText} </button>;
             })}
           </div>
