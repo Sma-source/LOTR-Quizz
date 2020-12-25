@@ -7,7 +7,10 @@ function App() {
 
   const [showScore, setShowScore] = useState(false);
 
-  const handleAnswerClick = () => {
+  const handleAnswerClick = (isCorrect) => {
+    if (isCorrect) {
+      alert("correct answer");
+    }
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < data.length) {
       setCurrentQuestion(nextQuestion);
