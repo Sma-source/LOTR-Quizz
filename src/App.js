@@ -7,6 +7,8 @@ function App() {
 
   const [showScore, setShowScore] = useState(false);
 
+  const [score, setScore] = useState(0);
+
   const handleAnswerClick = (isCorrect) => {
     if (isCorrect) {
       alert("correct answer");
