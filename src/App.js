@@ -35,7 +35,10 @@ function App() {
           <div className="answer-section">
             {data[currentQuestion].answerOptions.map((answer, index) => {
               return (
-                <button onClick={() => handleAnswerClick()} key={index}>
+                <button
+                  onClick={() => handleAnswerClick(answer.isCorrect)}
+                  key={index}
+                >
                   {answer.answerText}{" "}
                 </button>
               );
