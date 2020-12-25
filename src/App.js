@@ -12,7 +12,7 @@ function App() {
     if (nextQuestion < data.length) {
       setCurrentQuestion(nextQuestion);
     } else {
-      alert("end of the quizz!");
+      setShowScore(true);
     }
     setCurrentQuestion(nextQuestion);
   };
