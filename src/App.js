@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <h1>LOTR Quizz app</h1>
 
-      {false ? (
+      {showScore ? (
         <div className="score-section">You scored 1 out of {data.length}</div>
       ) : (
         <>
