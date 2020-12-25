@@ -7,6 +7,11 @@ function App() {
 
   const handleAnswerClick = (answer) => {
     const nextQuestion = currentQuestion + 1;
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion);
+    } else {
+      alert("end of the quizz!");
+    }
     setCurrentQuestion(nextQuestion);
   };
   return (
