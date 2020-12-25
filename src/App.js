@@ -10,8 +10,8 @@ function App() {
   const [score, setScore] = useState(0);
 
   const handleAnswerClick = (isCorrect) => {
-    if (isCorrect) {
-      alert("correct answer");
+    if (answer.isCorrect) {
+      setScore(score + 1);
     }
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < data.length) {
