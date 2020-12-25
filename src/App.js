@@ -4,6 +4,11 @@ import data from "./data";
 
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(1);
+
+  const handleAnswerClick = (answer) => {
+    const nextQuestion = currentQuestion + 1;
+    setCurrentQuestion(nextQuestion);
+  };
   return (
     <div className="App">
       <h1>LOTR Quizz app</h1>
@@ -22,7 +27,11 @@ function App() {
           </div>
           <div className="answer-section">
             {data[currentQuestion].answerOptions.map((answer, index) => {
-              return <button key={index}>{answer.answerText} </button>;
+              return (
+                <button onClick={() => handleAnswerClick()} key={index}>
+                  {answer.answerText}{" "}
+                </button>
+              );
             })}
           </div>
         </>
