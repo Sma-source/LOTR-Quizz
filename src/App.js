@@ -5,6 +5,8 @@ import data from "./data";
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(1);
 
+  const [showScore, setShowScore] = useState(false);
+
   const handleAnswerClick = () => {
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < data.length) {
