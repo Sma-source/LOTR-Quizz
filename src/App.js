@@ -5,9 +5,9 @@ import data from "./data";
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(1);
 
-  const handleAnswerClick = (answer) => {
+  const handleAnswerClick = () => {
     const nextQuestion = currentQuestion + 1;
-    if (nextQuestion < questions.length) {
+    if (nextQuestion < data.length) {
       setCurrentQuestion(nextQuestion);
     } else {
       alert("end of the quizz!");
