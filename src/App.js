@@ -3,6 +3,7 @@ import "./App.css";
 import data from "./data";
 
 function App() {
+  const [currentQuestion, setCurrentQuestion] = useState(0);
   return (
     <div className="App">
       <h1>LOTR Quizz app</h1>
