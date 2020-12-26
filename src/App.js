@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import "./index.css";
 import data from "./data";
 
 function App() {
@@ -20,36 +20,45 @@ function App() {
       setShowScore(true);
     }
   };
+  const refreshPage = () => {
+    window.location.reload();
+  };
   return (
     <div className="App">
-      <h1>LOTR Quizz app</h1>
-
       {showScore ? (
-        <div className="score-section">
+        <div className=" section score-section">
           You {score} out of {data.length}
+          <button onClick={refreshPage}>Try Again!</button>
         </div>
       ) : (
         <>
-          <span>Score : {score}</span>
-          <div className="question-section">
-            <div className="question-count">
-              <span>Question {currentQuestion + 1} </span>/{data.length}
+          <span className="score-live">Score : {score}</span>
+          <div className="container">
+            <div className=" section question-section">
+              <div className="question-count">
+                <span>
+                  Question {currentQuestion + 1} /{data.length}{" "}
+                </span>
+              </div>
+              <div className="question-img">
+                <img width="500" src={data[currentQuestion].img} alt="lotr" />
+              </div>
+              <div className="question-text">
+                {data[currentQuestion].questionText}
+              </div>
             </div>
-            <div className="question-text">
-              {data[currentQuestion].questionText}
+            <div className=" section answer-section">
+              {data[currentQuestion].answerOptions.map((answer, index) => {
+                return (
+                  <button
+                    onClick={() => handleAnswerClick(answer.isCorrect)}
+                    key={index}
+                  >
+                    {answer.answerText}{" "}
+                  </button>
+                );
+              })}
             </div>
-          </div>
-          <div className="answer-section">
-            {data[currentQuestion].answerOptions.map((answer, index) => {
-              return (
-                <button
-                  onClick={() => handleAnswerClick(answer.isCorrect)}
-                  key={index}
-                >
-                  {answer.answerText}{" "}
-                </button>
-              );
-            })}
           </div>
         </>
       )}
