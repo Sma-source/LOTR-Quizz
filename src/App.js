@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./index.css";
 import data from "./data";
 import Question from "./Question";
+import Answers from "./Answers";
 
 function App() {
   const [allData, setAllData] = useState(data);
@@ -40,18 +41,10 @@ function App() {
               <h1>LOTR quizz</h1>
             </div>
             <Question currentQuestion={currentQuestion} />
-            <div className=" section answer-section">
-              {allData[currentQuestion].answerOptions.map((answer, index) => {
-                return (
-                  <button
-                    onClick={() => handleAnswerClick(answer.isCorrect)}
-                    key={index}
-                  >
-                    {answer.answerText}{" "}
-                  </button>
-                );
-              })}
-            </div>
+            <Answers
+              currentQuestion={currentQuestion}
+              handleAnswerClick={handleAnswerClick}
+            />
           </div>
         </>
       )}
