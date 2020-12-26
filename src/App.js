@@ -32,8 +32,10 @@ function App() {
         </div>
       ) : (
         <>
-          <span className="score-live">Score : {score}</span>
           <div className="container">
+            <div className="section title">
+              <h1>LOTR quizz</h1>
+            </div>
             <div className=" section question-section">
               <div className="question-count">
                 <span>
