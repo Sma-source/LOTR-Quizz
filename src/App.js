@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./index.css";
 import data from "./data";
+import Question from "./Question";
 
 function App() {
+  const [allData, setAllData] = useState(data);
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
   const [showScore, setShowScore] = useState(false);
@@ -14,7 +17,7 @@ function App() {
       setScore(score + 1);
     }
     const nextQuestion = currentQuestion + 1;
-    if (nextQuestion < data.length) {
+    if (nextQuestion < allData.length) {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
@@ -27,7 +30,7 @@ function App() {
     <div className="App">
       {showScore ? (
         <div className=" section score-section">
-          You {score} out of {data.length}
+          You {score} out of {allData.length}
           <button onClick={refreshPage}>Try Again!</button>
         </div>
       ) : (
@@ -36,21 +39,9 @@ function App() {
             <div className="section title">
               <h1>LOTR quizz</h1>
             </div>
-            <div className=" section question-section">
-              <div className="question-count">
-                <span>
-                  Question {currentQuestion + 1} /{data.length}{" "}
-                </span>
-              </div>
-              <div className="question-img">
-                <img width="500" src={data[currentQuestion].img} alt="lotr" />
-              </div>
-              <div className="question-text">
-                {data[currentQuestion].questionText}
-              </div>
-            </div>
+            <Question currentQuestion={currentQuestion} />
             <div className=" section answer-section">
-              {data[currentQuestion].answerOptions.map((answer, index) => {
+              {allData[currentQuestion].answerOptions.map((answer, index) => {
                 return (
                   <button
                     onClick={() => handleAnswerClick(answer.isCorrect)}
