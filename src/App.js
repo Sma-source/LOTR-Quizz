@@ -3,14 +3,14 @@ import "./App.css";
 import data from "./data";
 
 function App() {
-  const [currentQuestion, setCurrentQuestion] = useState(1);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
 
   const [showScore, setShowScore] = useState(false);
 
   const [score, setScore] = useState(0);
 
   const handleAnswerClick = (isCorrect) => {
-    if (answer.isCorrect) {
+    if (isCorrect) {
       setScore(score + 1);
     }
     const nextQuestion = currentQuestion + 1;
@@ -19,7 +19,6 @@ function App() {
     } else {
       setShowScore(true);
     }
-    setCurrentQuestion(nextQuestion);
   };
   return (
     <div className="App">
@@ -27,13 +26,14 @@ function App() {
 
       {showScore ? (
         <div className="score-section">
-          You {score} 1 out of {data.length}
+          You {score} out of {data.length}
         </div>
       ) : (
         <>
+          <span>Score : {score}</span>
           <div className="question-section">
             <div className="question-count">
-              <span>Question 1</span>/{data.length}
+              <span>Question {currentQuestion + 1} </span>/{data.length}
             </div>
             <div className="question-text">
               {data[currentQuestion].questionText}

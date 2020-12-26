@@ -1,38 +1,39 @@
 const data = [
   {
-    questionText: "What is the capital of France?",
-    answerOptions: [
-      { answerText: "New York", isCorrect: false },
-      { answerText: "London", isCorrect: false },
-      { answerText: "Paris", isCorrect: true },
-      { answerText: "Dublin", isCorrect: false },
-    ],
-  },
-  {
-    questionText: "Who is CEO of Tesla?",
-    answerOptions: [
-      { answerText: "Jeff Bezos", isCorrect: false },
-      { answerText: "Elon Musk", isCorrect: true },
-      { answerText: "Bill Gates", isCorrect: false },
-      { answerText: "Tony Stark", isCorrect: false },
-    ],
-  },
-  {
-    questionText: "The iPhone was created by which company?",
-    answerOptions: [
-      { answerText: "Apple", isCorrect: true },
-      { answerText: "Intel", isCorrect: false },
-      { answerText: "Amazon", isCorrect: false },
-      { answerText: "Microsoft", isCorrect: false },
-    ],
-  },
-  {
-    questionText: "How many Harry Potter books are there?",
+    questionText: "How many Rings of Power have been forged ?",
     answerOptions: [
       { answerText: "1", isCorrect: false },
-      { answerText: "4", isCorrect: false },
-      { answerText: "6", isCorrect: false },
-      { answerText: "7", isCorrect: true },
+      { answerText: "3", isCorrect: false },
+      { answerText: "20", isCorrect: true },
+      { answerText: "9", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "Who is committing suicide in the besieged city of Minas Tirith during the Battle of the Pelennor Fields ?",
+    answerOptions: [
+      { answerText: "Ecthelion II", isCorrect: false },
+      { answerText: "Denethor II", isCorrect: true },
+      { answerText: "Boromir", isCorrect: false },
+      { answerText: "Faramir", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "What is the name of the fortress of the Dark Lord Sauron ?",
+    answerOptions: [
+      { answerText: "Cirith Ungol", isCorrect: false },
+      { answerText: "Minas Morgul", isCorrect: false },
+      { answerText: "Amon Sûl", isCorrect: false },
+      { answerText: "Barad-dûr", isCorrect: true },
+    ],
+  },
+  {
+    questionText: "Who was the king of the rohan?",
+    answerOptions: [
+      { answerText: "Théoden", isCorrect: true },
+      { answerText: "Théodred", isCorrect: false },
+      { answerText: "Aragorn", isCorrect: false },
+      { answerText: "Éomer", isCorrect: false },
     ],
   },
 ];
