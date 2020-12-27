@@ -3,6 +3,9 @@ import "./index.css";
 import data from "./data";
 import Question from "./Question";
 import Answers from "./Answers";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 function App() {
   const [allData, setAllData] = useState(data);
@@ -30,10 +33,16 @@ function App() {
   return (
     <div className="App">
       {showScore ? (
-        <div className=" section score-section">
-          You {score} out of {allData.length}
-          <button onClick={refreshPage}>Try Again!</button>
-        </div>
+        <Container className="p-3">
+          <Jumbotron className="text-center">
+            <h1 className="header">
+              You Score {score} out of {allData.length}
+            </h1>
+            <Button size="lg" onClick={refreshPage}>
+              Try Again!
+            </Button>
+          </Jumbotron>
+        </Container>
       ) : (
         <>
           <div className="container">
