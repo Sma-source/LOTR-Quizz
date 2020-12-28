@@ -4,16 +4,21 @@ import data from "./data";
 const Question = ({ currentQuestion }) => {
   return (
     <>
-      <div className=" section question-section">
+      <div className="text-center">
         <div className="question-count">
-          <span>
+          <span className="text-muted">
             Question {currentQuestion + 1} /{data.length}{" "}
           </span>
         </div>
         <div className="question-img">
-          <img width="400" src={data[currentQuestion].img} alt="" />
+          <img
+            className="img-fluid rounded"
+            width="400"
+            src={data[currentQuestion].img}
+            alt=""
+          />
         </div>
-        <div className="question-text">
+        <div className="text-justify-center h5 pb-5 pt-3 font-weight-bold">
           <h4>{data[currentQuestion].questionText}</h4>
         </div>
       </div>

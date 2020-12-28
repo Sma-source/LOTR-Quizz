@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function App() {
   const [allData, setAllData] = useState(data);
@@ -40,25 +41,22 @@ function App() {
               You Score {score} out of {allData.length}
             </h1>
             <Button size="lg" onClick={refreshPage}>
-              Try Again!
+              Try again
             </Button>
           </Jumbotron>
         </Container>
       ) : (
         <>
-          <Container>
-            <div className="section title">
-              <h1>LOTR quizz</h1>
-            </div>
-            <Row>
+          <Row>
+            <div className="col-md-8 offset-md-2">
               <Question currentQuestion={currentQuestion} />
-            </Row>
 
-            <Answers
-              currentQuestion={currentQuestion}
-              handleAnswerClick={handleAnswerClick}
-            />
-          </Container>
+              <Answers
+                currentQuestion={currentQuestion}
+                handleAnswerClick={handleAnswerClick}
+              />
+            </div>
+          </Row>
         </>
       )}
     </div>

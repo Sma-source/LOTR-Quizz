@@ -14,7 +14,7 @@ const data = [
     questionText:
       "Who is committing suicide in the besieged city of Minas Tirith during the Battle of the Pelennor Fields ?",
     img:
-      "https://www.telegraph.co.uk/content/dam/film/lord-of-the-rings/minas-tirith-xlarge.jpg",
+      "https://www.telegraph.co.uk/content/dam/film/lord-of-the-rings/minas-tirith-medium.jpg",
 
     answerOptions: [
       { answerText: "Ecthelion II", isCorrect: false },
