@@ -4,8 +4,8 @@ import data from "./data";
 const Question = ({ currentQuestion }) => {
   return (
     <>
-      <div className="text-center">
-        <div className="question-count">
+      <div className="text-center pt-3">
+        <div className="question-count pb-3">
           <span className="text-muted">
             Question {currentQuestion + 1} /{data.length}{" "}
           </span>

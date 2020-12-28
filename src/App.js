@@ -38,7 +38,8 @@ function App() {
         <Container className="p-3">
           <Jumbotron className="text-center">
             <h1 className="header">
-              You Score {score} out of {allData.length}
+              Your Score <br></br>
+              {score}/{allData.length}
             </h1>
             <Button size="lg" onClick={refreshPage}>
               Try again
@@ -47,16 +48,18 @@ function App() {
         </Container>
       ) : (
         <>
-          <Row>
-            <div className="col-md-8 offset-md-2">
-              <Question currentQuestion={currentQuestion} />
+          <Container>
+            <Row>
+              <div className="col-md-8 offset-md-2">
+                <Question currentQuestion={currentQuestion} />
 
-              <Answers
-                currentQuestion={currentQuestion}
-                handleAnswerClick={handleAnswerClick}
-              />
-            </div>
-          </Row>
+                <Answers
+                  currentQuestion={currentQuestion}
+                  handleAnswerClick={handleAnswerClick}
+                />
+              </div>
+            </Row>
+          </Container>
         </>
       )}
     </div>
