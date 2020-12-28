@@ -6,6 +6,7 @@ import Answers from "./Answers";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
+import Row from "react-bootstrap/Row";
 
 function App() {
   const [allData, setAllData] = useState(data);
@@ -45,16 +46,19 @@ function App() {
         </Container>
       ) : (
         <>
-          <div className="container">
+          <Container>
             <div className="section title">
               <h1>LOTR quizz</h1>
             </div>
-            <Question currentQuestion={currentQuestion} />
+            <Row>
+              <Question currentQuestion={currentQuestion} />
+            </Row>
+
             <Answers
               currentQuestion={currentQuestion}
               handleAnswerClick={handleAnswerClick}
             />
-          </div>
+          </Container>
         </>
       )}
     </div>
