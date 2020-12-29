@@ -28,8 +28,10 @@ function App() {
       setShowScore(true);
     }
   };
-  const refreshPage = () => {
-    window.location.reload();
+  const handleTryAgain = () => {
+    setShowScore(false);
+    setCurrentQuestion(0);
+    setScore(0);
   };
 
   return (
@@ -41,7 +43,7 @@ function App() {
               Your Score <br></br>
               {score}/{quizz.length}
             </h1>
-            <Button size="lg" onClick={refreshPage}>
+            <Button size="lg" onClick={handleTryAgain}>
               Try again
             </Button>
           </Jumbotron>
