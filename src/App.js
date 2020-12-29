@@ -18,7 +18,11 @@ function App() {
 
   const [score, setScore] = useState(0);
 
-  const [alert, setAlert] = useState();
+  const [alert, setAlert] = useState({
+    show: true,
+    msg: "test",
+    type: "success",
+  });
 
   const handleAnswerClick = (isCorrect) => {
     if (isCorrect) {
@@ -46,6 +50,7 @@ function App() {
               Your Score <br></br>
               {score}/{quizz.length}
             </h1>
+            {alert.show && <Alert {...alert} />}
             <Button size="lg" onClick={handleTryAgain}>
               Try again
             </Button>
