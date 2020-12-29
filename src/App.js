@@ -7,11 +7,8 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 function App() {
-  const [allData, setAllData] = useState(data);
-
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
   const [showScore, setShowScore] = useState(false);
@@ -23,7 +20,7 @@ function App() {
       setScore(score + 1);
     }
     const nextQuestion = currentQuestion + 1;
-    if (nextQuestion < allData.length) {
+    if (nextQuestion < data.length) {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
@@ -39,7 +36,7 @@ function App() {
           <Jumbotron className="text-center">
             <h1 className="header">
               Your Score <br></br>
-              {score}/{allData.length}
+              {score}/{data.length}
             </h1>
             <Button size="lg" onClick={refreshPage}>
               Try again
