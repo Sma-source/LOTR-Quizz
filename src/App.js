@@ -71,7 +71,7 @@ function App() {
           <Container>
             <Row>
               <div className="col-md-8 offset-md-2">
-                <Question {...quizz} currentQuestion={currentQuestion} />
+                <Question currentQuestion={currentQuestion} />
 
                 <Answers
                   currentQuestion={currentQuestion}
