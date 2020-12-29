@@ -3,6 +3,7 @@ import "./index.css";
 import data from "./data";
 import Question from "./Question";
 import Answers from "./Answers";
+import Alert from "./Alert";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
