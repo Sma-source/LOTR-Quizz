@@ -18,6 +18,8 @@ function App() {
 
   const [score, setScore] = useState(0);
 
+  const [alert, setAlert] = useState();
+
   const handleAnswerClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
