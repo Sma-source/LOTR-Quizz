@@ -19,9 +19,9 @@ function App() {
   const [score, setScore] = useState(0);
 
   const [alert, setAlert] = useState({
-    show: true,
-    msg: "test",
-    type: "success",
+    show: false,
+    msg: "",
+    type: "",
   });
 
   const handleAnswerClick = (isCorrect) => {
@@ -33,14 +33,24 @@ function App() {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
+
+      if (score >= 2) {
+        showAlert(true, "success", "Whaou congrats!!!");
+      } else if (score < 2) {
+        showAlert(true, "danger", "Very Bad!!");
+      }
     }
   };
+
   const handleTryAgain = () => {
     setShowScore(false);
     setCurrentQuestion(0);
     setScore(0);
   };
 
+  const showAlert = (show = false, type = "", msg = "") => {
+    setAlert({ show, type, msg });
+  };
   return (
     <div className="App">
       {showScore ? (
