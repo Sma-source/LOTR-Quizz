@@ -43,6 +43,30 @@ const data = [
       { answerText: "Éomer", isCorrect: false },
     ],
   },
+
+  {
+    questionText:
+      "What was Gollum name befored he was corrupted by the One ring",
+    img: "https://lauralzimmerman.files.wordpress.com/2015/04/gollum.gif",
+    answerOptions: [
+      { answerText: "Smog", isCorrect: false },
+      { answerText: "Déagol", isCorrect: false },
+      { answerText: "Sméagol", isCorrect: true },
+      { answerText: "Bilbo", isCorrect: false },
+    ],
+  },
+
+  {
+    questionText: "How many are the Black Riders also known as The Nazgûl",
+    img:
+      "http://i1.wp.com/31.media.tumblr.com/0b3b0f3d7bc886f51a2a08dbb660c2bf/tumblr_ml67l0szs71rnvb0co1_500.gif?resize=428%2C231",
+    answerOptions: [
+      { answerText: "7", isCorrect: false },
+      { answerText: "20", isCorrect: false },
+      { answerText: "8", isCorrect: false },
+      { answerText: "9", isCorrect: true },
+    ],
+  },
 ];
 
 export default data;
