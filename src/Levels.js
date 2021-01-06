@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 const Levels = ({ levels, filterQuizz }) => {
   return (
     <>
-      <div className="container">
+      <div className="container text-center">
         {levels.map((level, index) => {
           return (
             <Button

@@ -14,6 +14,8 @@ const allLevels = [...new Set(data.map((datas) => datas.difficulties))];
 function App() {
   const [quizz, setQuizz] = useState(data);
 
+  const [start, setStart] = useState(true);
+
   const [levels, setLevels] = useState(allLevels);
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -32,6 +34,7 @@ function App() {
       (datas) => datas.difficulties === difficulties
     );
     setQuizz(newQuizz);
+    setStart(false);
   };
   const handleAnswerClick = (isCorrect) => {
     if (isCorrect) {
@@ -60,10 +63,17 @@ function App() {
   const showAlert = (show = false, type = "", msg = "") => {
     setAlert({ show, type, msg });
   };
+
+  const handleStart = () => {
+    setStart(true);
+    handleTryAgain();
+  };
+
   return (
     <div className="App">
-      <Levels levels={levels} filterQuizz={filterQuizz} />;
-      {showScore ? (
+      {start ? (
+        <Levels levels={levels} filterQuizz={filterQuizz} />
+      ) : showScore ? (
         <Container className="p-3">
           <Jumbotron className="text-center bg-white">
             <h1 className="header">
@@ -71,8 +81,11 @@ function App() {
               {score}/{quizz.length}
             </h1>
             {alert.show && <Alert {...alert} />}
-            <Button size="lg" onClick={handleTryAgain}>
+            <Button size="lg m-1" onClick={handleTryAgain}>
               Try again
+            </Button>
+            <Button size="lg" onClick={handleStart}>
+              Try another Level
             </Button>
           </Jumbotron>
         </Container>
