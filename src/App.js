@@ -9,7 +9,7 @@ import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Row from "react-bootstrap/Row";
 
-console.log(allLevels);
+const allLevels = [...new Set(data.map((datas) => datas.difficulties))];
 function App() {
   const [quizz, setQuizz] = useState(data);
 
