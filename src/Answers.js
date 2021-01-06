@@ -10,7 +10,7 @@ const Answers = ({ currentQuestion, handleAnswerClick }) => {
           return (
             <Button
               size="md"
-              className="m-1"
+              className="m-1 pt-3 pr-5 pl-5 pb-3"
               onClick={() => handleAnswerClick(answer.isCorrect)}
               key={index}
             >

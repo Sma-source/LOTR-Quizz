@@ -27,9 +27,6 @@ function App() {
   const handleAnswerClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
-      showAlert(true, "success", "good answer");
-    } else {
-      showAlert(true, "danger", "bad answer");
     }
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < quizz.length) {
