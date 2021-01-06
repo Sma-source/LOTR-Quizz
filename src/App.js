@@ -8,6 +8,7 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Row from "react-bootstrap/Row";
+import Levels from "./Levels";
 
 const allLevels = [...new Set(data.map((datas) => datas.difficulties))];
 function App() {
@@ -61,6 +62,7 @@ function App() {
   };
   return (
     <div className="App">
+      <Levels levels={levels} filterQuizz={filterQuizz} />;
       {showScore ? (
         <Container className="p-3">
           <Jumbotron className="text-center bg-white">
