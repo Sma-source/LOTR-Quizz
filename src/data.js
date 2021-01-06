@@ -3,7 +3,7 @@ const data = [
     questionText: "How many Rings of Power have been forged ?",
     img:
       "http://vignette1.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456",
-    difficulties: "Medium",
+    difficulties: "Easy",
     answerOptions: [
       { answerText: "1", isCorrect: false },
       { answerText: "3", isCorrect: false },
@@ -16,7 +16,7 @@ const data = [
       "Who is committing suicide in the besieged city of Minas Tirith during the Battle of the Pelennor Fields ?",
     img:
       "https://www.telegraph.co.uk/content/dam/film/lord-of-the-rings/minas-tirith-medium.jpg",
-    difficulties: "Medium",
+    difficulties: "Easy",
 
     answerOptions: [
       { answerText: "Ecthelion II", isCorrect: false },
@@ -28,7 +28,7 @@ const data = [
   {
     questionText: "What is the name of the fortress of the Dark Lord Sauron ?",
     img: "https://live.staticflickr.com/3828/9845910735_29cb554c11_b.jpg",
-    difficulties: "Easy",
+    difficulties: "Medium",
     answerOptions: [
       { answerText: "Cirith Ungol", isCorrect: false },
       { answerText: "Minas Morgul", isCorrect: false },
