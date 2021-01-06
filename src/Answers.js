@@ -1,8 +1,8 @@
 import React from "react";
-import data from "./data";
+
 import Button from "react-bootstrap/Button";
 
-const Answers = ({ currentQuestion, handleAnswerClick }) => {
+const Answers = ({ data, currentQuestion, handleAnswerClick }) => {
   return (
     <>
       <div className="text-center">

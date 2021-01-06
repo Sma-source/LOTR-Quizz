@@ -1,7 +1,6 @@
 import React from "react";
-import data from "./data";
 
-const Question = ({ currentQuestion }) => {
+const Question = ({ data, currentQuestion }) => {
   return (
     <>
       <div className="text-center pt-3">

@@ -9,6 +9,7 @@ import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Row from "react-bootstrap/Row";
 
+console.log(allLevels);
 function App() {
   const [quizz, setQuizz] = useState(data);
 
@@ -71,9 +72,10 @@ function App() {
           <Container>
             <Row>
               <div className="col-md-8 offset-md-2">
-                <Question currentQuestion={currentQuestion} />
+                <Question data={quizz} currentQuestion={currentQuestion} />
 
                 <Answers
+                  data={quizz}
                   currentQuestion={currentQuestion}
                   handleAnswerClick={handleAnswerClick}
                 />
