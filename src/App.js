@@ -13,6 +13,8 @@ const allLevels = [...new Set(data.map((datas) => datas.difficulties))];
 function App() {
   const [quizz, setQuizz] = useState(data);
 
+  const [levels, setLevels] = useState(allLevels);
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
   const [showScore, setShowScore] = useState(false);
