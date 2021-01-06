@@ -1,5 +1,5 @@
 import React from "react";
-const Levels = () => {
+const Levels = ({ levels, filterQuizz }) => {
   return <></>;
 };
 export default Levels;
