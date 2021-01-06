@@ -26,7 +26,12 @@ function App() {
     msg: "",
     type: "",
   });
-
+  const filterQuizz = (difficulties) => {
+    const newQuizz = data.filter(
+      (datas) => datas.difficulties === difficulties
+    );
+    setQuizz(newQuizz);
+  };
   const handleAnswerClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
