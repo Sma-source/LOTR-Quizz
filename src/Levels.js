@@ -6,14 +6,14 @@ const Levels = ({ levels, filterQuizz }) => {
       <div className="box container text-center">
         <span className="text-dark font-weight-bold">Quizz</span>
         <h1 className="mt-4">
-          <span className="text-light display-4 font-weight-bold"> The</span>{" "}
+          <span className="text-brown display-4 font-weight-bold"> The</span>{" "}
           <br />
           <span className="text-dark display-1 font-weight-bold">
             {" "}
             Lord
           </span>{" "}
           <br />
-          <span className="text-light display-4 font-weight-bold">
+          <span className="text-brown display-4 font-weight-bold">
             of The
           </span>{" "}
           <br />
@@ -29,12 +29,12 @@ const Levels = ({ levels, filterQuizz }) => {
           alt="ring"
           className="img-fluid mt-2"
         />
-        <h3 className="mt-5 mb-5">Choose a level</h3>
+        <h3 className="mt-5 mb-5">Select a level to Start The Quizz</h3>
         {levels.map((level, index) => {
           return (
             <Button
               size="lg"
-              className="btn-level m-1"
+              className="btn-level btn btn-secondary m-1"
               key={index}
               onClick={() => filterQuizz(level)}
             >

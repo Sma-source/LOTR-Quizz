@@ -2,7 +2,6 @@
   font-family: "MiddleEarth";
   src: url("assets/font/MiddleEarth.woff2") format("woff2"),
     url("assets/font/MiddleEarth.woff") format("woff");
-  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -16,14 +15,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #000000;
 }
+.App {
+  background-color: #a6c2b6;
+  height: 100vh;
+}
 
+/* Start Game */
 .full {
   background-color: #a6c2b6;
   height: 100vh;
   width: 100%;
-  font-family: "MiddleEarth";
 }
 
+.full h1 {
+  font-family: "MiddleEarth";
+}
 .btn-level {
   border-radius: 50px !important;
 }
+
+.text-brown {
+  color: rgba(225, 200, 160, 1);
+  font-weight: 800;
+}
+
+/* Start Game */
