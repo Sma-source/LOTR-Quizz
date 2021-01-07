@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "MiddleEarth";
+  src: url("assets/font/MiddleEarth.woff2") format("woff2"),
+    url("assets/font/MiddleEarth.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   margin: 0;
   padding: 0;
@@ -7,4 +15,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000000;
+}
+
+.full {
+  background-color: #a6c2b6;
+  height: 100vh;
+  width: 100%;
+  font-family: "MiddleEarth";
+}
+
+.btn-level {
+  border-radius: 50px !important;
 }
