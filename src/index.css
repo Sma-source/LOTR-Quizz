@@ -17,20 +17,20 @@ body {
 }
 .App {
   background-color: #a6c2b6;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Start Game */
 .full {
   background-color: #a6c2b6;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
 .full h1 {
   font-family: "MiddleEarth";
 }
-.btn-level {
+.btn {
   border-radius: 50px !important;
 }
 
@@ -40,3 +40,18 @@ body {
 }
 
 /* Start Game */
+
+/* Questions Game */
+.question-count {
+  margin: 2em;
+}
+.questions-wrapper {
+  padding-top: 5em;
+  padding-bottom: 3em;
+}
+.questions {
+  color: #100f14;
+  font-family: "MiddleEarth";
+  line-height: 1.5;
+}
+/* Questions Game */

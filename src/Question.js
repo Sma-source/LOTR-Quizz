@@ -4,8 +4,8 @@ const Question = ({ data, currentQuestion }) => {
   return (
     <>
       <div className="text-center pt-3">
-        <div className="question-count pb-3">
-          <span className="text-muted">
+        <div className="question-count">
+          <span className="text-white">
             Question {currentQuestion + 1} /{data.length}{" "}
           </span>
         </div>
@@ -17,8 +17,8 @@ const Question = ({ data, currentQuestion }) => {
             alt=""
           />
         </div>
-        <div className="text-justify-center h5 pb-5 pt-3 font-weight-bold">
-          <h4>{data[currentQuestion].questionText}</h4>
+        <div className="questions-wrapper">
+          <h2 className="questions">{data[currentQuestion].questionText}</h2>
         </div>
       </div>
     </>
