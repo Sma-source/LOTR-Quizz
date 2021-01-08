@@ -76,7 +76,7 @@ function App() {
             </h1>
             {alert.show && <Alert {...alert} />}
 
-            <Button size="lg" onClick={handleStart}>
+            <Button variant="secondary" size="lg" onClick={handleStart}>
               Try another Level
             </Button>
             <Button
