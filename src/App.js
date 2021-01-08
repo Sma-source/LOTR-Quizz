@@ -70,7 +70,7 @@ function App() {
       ) : showScore ? (
         <Container className="p-3 d-flex align-items-center min-vh-100">
           <Jumbotron className="score text-center mx-auto">
-            <h1 className="header mb-5">
+            <h1 className="header mb-5 display-1">
               Your Score <br></br>
               {score}/{quizz.length}
             </h1>
