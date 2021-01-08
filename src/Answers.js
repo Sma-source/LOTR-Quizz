@@ -5,17 +5,20 @@ import Button from "react-bootstrap/Button";
 const Answers = ({ data, currentQuestion, handleAnswerClick }) => {
   return (
     <>
-      <div className="container text-center">
+      <div className="test text-center">
         {data[currentQuestion].answerOptions.map((answer, index) => {
           return (
-            <Button
-              size="lg"
-              className="btn-secondary m-1 pt-3 pr-5 pl-5 pb-3"
-              onClick={() => handleAnswerClick(answer.isCorrect)}
-              key={index}
-            >
-              {answer.answerText}{" "}
-            </Button>
+            <div className="answer" key={index}>
+              <Button
+                variant=""
+                type="button"
+                className="btn-answer"
+                size="lg"
+                onClick={() => handleAnswerClick(answer.isCorrect)}
+              >
+                {answer.answerText}
+              </Button>
+            </div>
           );
         })}
       </div>

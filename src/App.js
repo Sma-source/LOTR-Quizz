@@ -45,12 +45,6 @@ function App() {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
-
-      if (score >= 4) {
-        showAlert(true, "success", "Whaou congrats!!!");
-      } else if (score < 2) {
-        showAlert(true, "danger", "Very Bad!!");
-      }
     }
   };
 
@@ -74,18 +68,23 @@ function App() {
       {start ? (
         <Levels levels={levels} filterQuizz={filterQuizz} />
       ) : showScore ? (
-        <Container className="p-3">
-          <Jumbotron className="text-center bg-white">
-            <h1 className="header">
+        <Container className="p-3 d-flex align-items-center min-vh-100">
+          <Jumbotron className="score text-center mx-auto">
+            <h1 className="header mb-5">
               Your Score <br></br>
               {score}/{quizz.length}
             </h1>
             {alert.show && <Alert {...alert} />}
-            <Button size="lg m-1" onClick={handleTryAgain}>
-              Try again
-            </Button>
+
             <Button size="lg" onClick={handleStart}>
               Try another Level
+            </Button>
+            <Button
+              className="btn-brown"
+              size="lg m-2"
+              onClick={handleTryAgain}
+            >
+              Try again
             </Button>
           </Jumbotron>
         </Container>

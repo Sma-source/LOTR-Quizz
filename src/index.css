@@ -19,6 +19,19 @@ body {
   background-color: #a6c2b6;
   min-height: 100vh;
 }
+.btn-brown {
+  background-color: rgba(225, 200, 160, 1) !important;
+}
+button:focus,
+.btn,
+.btn:focus,
+.btn:active,
+.btn:hover,
+.btn:active:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-style: none !important;
+}
 
 /* Start Game */
 .full {
@@ -43,10 +56,12 @@ body {
 
 /* Questions Game */
 .question-count {
-  margin: 2em;
+  padding-top: 1em;
+  font-size: 2em;
+  font-family: "MiddleEarth";
 }
 .questions-wrapper {
-  padding-top: 5em;
+  padding-top: 3em;
   padding-bottom: 3em;
 }
 .questions {
@@ -55,3 +70,42 @@ body {
   line-height: 1.5;
 }
 /* Questions Game */
+
+/* Answers Game */
+.btn-answer {
+  width: 100%;
+  color: #ffffff !important;
+  background-color: #252d4a !important;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.answer .btn:hover {
+  background-color: #252 !important;
+}
+.answer {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.test:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .test {
+    width: 100%;
+  }
+}
+/* Answers Game */
+/* Score Game */
+.jumbotron.score {
+  background-color: transparent !important;
+  border-color: tomato !important;
+}
+/* Score Game */
