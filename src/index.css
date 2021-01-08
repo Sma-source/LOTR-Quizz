@@ -75,7 +75,7 @@ button:focus,
 .btn-answer {
   width: 100%;
   color: #ffffff !important;
-  background-color: #252d4a !important;
+  background-color: #494555 !important;
   display: flex;
   padding: 5px;
   justify-content: center;
@@ -83,7 +83,7 @@ button:focus,
   cursor: pointer;
 }
 .answer .btn:hover {
-  background-color: #252 !important;
+  background-color: rgba(225, 200, 160, 1) !important;
 }
 .answer {
   float: left;
@@ -105,6 +105,5 @@ button:focus,
 /* Score Game */
 .jumbotron.score {
   background-color: transparent !important;
-  border-color: tomato !important;
 }
 /* Score Game */
