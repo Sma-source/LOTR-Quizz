@@ -16,7 +16,7 @@ const Question = ({ data, currentQuestion }) => {
           <span className="text-white">Question {currentQuestion + 1}</span>
         </div>
         <div className="questions-wrapper">
-          <h2 className="questions">{data[currentQuestion].questionText}</h2>
+          <h2 className="questions">{data[currentQuestion].questionText} ?</h2>
         </div>
       </div>
     </>
