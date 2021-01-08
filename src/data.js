@@ -1,6 +1,6 @@
 const data = [
   {
-    questionText: "How many Rings of Power have been forged ?",
+    questionText: "How many Rings of Power have been forged",
     img:
       "http://vignette1.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456",
     difficulties: "Easy",
@@ -13,7 +13,7 @@ const data = [
   },
   {
     questionText:
-      "Who is committing suicide in the besieged city of Minas Tirith during the Battle of the Pelennor Fields ?",
+      "Who is committing suicide in the besieged city of Minas Tirith during the Battle of the Pelennor Fields",
     img:
       "https://www.telegraph.co.uk/content/dam/film/lord-of-the-rings/minas-tirith-medium.jpg",
     difficulties: "Easy",
@@ -26,9 +26,9 @@ const data = [
     ],
   },
   {
-    questionText: "What is the name of the fortress of the Dark Lord Sauron ?",
+    questionText: "What is the name of the fortress of the Dark Lord Sauron",
     img: "https://live.staticflickr.com/3828/9845910735_29cb554c11_b.jpg",
-    difficulties: "Medium",
+    difficulties: "Easy",
     answerOptions: [
       { answerText: "Cirith Ungol", isCorrect: false },
       { answerText: "Minas Morgul", isCorrect: false },
@@ -37,9 +37,9 @@ const data = [
     ],
   },
   {
-    questionText: "Who was the king of the rohan?",
+    questionText: "Who was the king of the rohan",
     img: "https://i.ytimg.com/vi/qByDVgc8R6E/maxresdefault.jpg",
-    difficulties: "Hard",
+    difficulties: "Easy",
     answerOptions: [
       { answerText: "Théoden", isCorrect: true },
       { answerText: "Théodred", isCorrect: false },
@@ -65,12 +65,36 @@ const data = [
     questionText: "How many are the Black Riders also known as The Nazgûl",
     img:
       "http://i1.wp.com/31.media.tumblr.com/0b3b0f3d7bc886f51a2a08dbb660c2bf/tumblr_ml67l0szs71rnvb0co1_500.gif?resize=428%2C231",
-    difficulties: "Hard",
+    difficulties: "Easy",
     answerOptions: [
       { answerText: "7", isCorrect: false },
       { answerText: "20", isCorrect: false },
       { answerText: "8", isCorrect: false },
       { answerText: "9", isCorrect: true },
+    ],
+  },
+  {
+    questionText: "What creature Gandalf faces in the mines of Moria",
+    img:
+      "https://64.media.tumblr.com/ddaeec5b5e078707fe454e848c908ff3/tumblr_pvx9rrR9jl1rrkahjo7_500.gif",
+    difficulties: "Easy",
+    answerOptions: [
+      { answerText: "Sauron", isCorrect: false },
+      { answerText: "A Dragon", isCorrect: false },
+      { answerText: "A Balrog", isCorrect: true },
+      { answerText: "A Nazgûl", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "What is the name of the inn where Frodo first met Strider",
+    img:
+      "https://64.media.tumblr.com/ac7e5228fa303ac42dfc2893a42e6426/tumblr_n30bqx2azQ1tvizo2o1_500.gif",
+    difficulties: "Easy",
+    answerOptions: [
+      { answerText: "The Dancing Pony", isCorrect: false },
+      { answerText: "The Prancing Pony", isCorrect: true },
+      { answerText: "The Fancy Pony ", isCorrect: true },
+      { answerText: "The Pony Inn", isCorrect: false },
     ],
   },
 ];
