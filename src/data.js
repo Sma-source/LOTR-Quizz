@@ -97,6 +97,29 @@ const data = [
       { answerText: "The Pony Inn", isCorrect: false },
     ],
   },
+  {
+    questionText: "What is the symbol of Saruman ?",
+    img: "https://media1.giphy.com/media/4NQ9mR6sh8LoA/giphy.gif",
+    difficulties: "Easy",
+    answerOptions: [
+      { answerText: "A white hand", isCorrect: true },
+      { answerText: "A black hand", isCorrect: false },
+      { answerText: "A red eyes", isCorrect: false },
+      { answerText: "A red hand", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "What gift give Galadriel to Frodo, before the Fellowship departed from Lothlórien ?",
+    img: "https://media.giphy.com/media/Ai8GT3SyJCDx6/giphy.gif",
+    difficulties: "Easy",
+    answerOptions: [
+      { answerText: "Three strands of hair", isCorrect: false },
+      { answerText: "A rope", isCorrect: false },
+      { answerText: "An Elven dagger", isCorrect: false },
+      { answerText: "A phial of light", isCorrect: true },
+    ],
+  },
 ];
 
 export default data;
