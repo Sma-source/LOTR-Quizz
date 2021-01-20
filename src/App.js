@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "./index.css";
 import data from "./data";
 import Question from "./Question";
@@ -11,13 +11,10 @@ import Row from "react-bootstrap/Row";
 import Levels from "./Levels";
 import { GlobalProvider } from "./context/GlobalState";
 
-const allLevels = [...new Set(data.map((datas) => datas.difficulties))];
 function App() {
   const [quizz, setQuizz] = useState(data);
 
   const [start, setStart] = useState(true);
-
-  const [levels, setLevels] = useState(allLevels);
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
@@ -68,7 +65,7 @@ function App() {
     <GlobalProvider>
       <div className="App">
         {start ? (
-          <Levels levels={levels} filterQuizz={filterQuizz} />
+          <Levels filterQuizz={filterQuizz} />
         ) : showScore ? (
           <Container className="p-3 d-flex align-items-center min-vh-100">
             <Jumbotron className="score text-center mx-auto">
