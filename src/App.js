@@ -9,6 +9,7 @@ import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Row from "react-bootstrap/Row";
 import Levels from "./Levels";
+import { GlobalProvider } from "./context/GlobalState";
 
 const allLevels = [...new Set(data.map((datas) => datas.difficulties))];
 function App() {
