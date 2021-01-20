@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState, useContext } from "react";
+import { GlobalContext } from "./context/GlobalState";
 import Button from "react-bootstrap/Button";
-const Levels = ({ levels, filterQuizz }) => {
+const Levels = ({ filterQuizz }) => {
+  const { Questionnaire } = useContext(GlobalContext);
+  const allLevels = [
+    ...new Set(Questionnaire.map((datas) => datas.difficulties)),
+  ];
+  const [levels, setLevels] = useState(allLevels);
   return (
     <section className="full">
       <div className="box container text-center">
