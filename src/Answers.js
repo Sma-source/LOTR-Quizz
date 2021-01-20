@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { GlobalContext } from "./context/GlobalState";
 import Button from "react-bootstrap/Button";
 
-const Answers = ({ data, currentQuestion, handleAnswerClick }) => {
+const Answers = ({ currentQuestion, handleAnswerClick }) => {
+  const { Questionnaire } = useContext(GlobalContext);
   return (
     <>
       <div className="test text-center">
-        {data[currentQuestion].answerOptions.map((answer, index) => {
+        {Questionnaire[currentQuestion].answerOptions.map((answer, index) => {
           return (
             <div className="answer" key={index}>
               <Button
