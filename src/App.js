@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./index.css";
 import data from "./data";
 import Question from "./Question";
@@ -65,48 +65,50 @@ function App() {
   };
 
   return (
-    <div className="App">
-      {start ? (
-        <Levels levels={levels} filterQuizz={filterQuizz} />
-      ) : showScore ? (
-        <Container className="p-3 d-flex align-items-center min-vh-100">
-          <Jumbotron className="score text-center mx-auto">
-            <h1 className="header mb-5 display-1">
-              Your Score <br></br>
-              {score}/{quizz.length}
-            </h1>
-            {alert.show && <Alert {...alert} />}
+    <GlobalProvider>
+      <div className="App">
+        {start ? (
+          <Levels levels={levels} filterQuizz={filterQuizz} />
+        ) : showScore ? (
+          <Container className="p-3 d-flex align-items-center min-vh-100">
+            <Jumbotron className="score text-center mx-auto">
+              <h1 className="header mb-5 display-1">
+                Your Score <br></br>
+                {score}/{quizz.length}
+              </h1>
+              {alert.show && <Alert {...alert} />}
 
-            <Button variant="secondary" size="lg" onClick={handleStart}>
-              Try another Level
-            </Button>
-            <Button
-              className="btn-brown"
-              size="lg m-2"
-              onClick={handleTryAgain}
-            >
-              Try again
-            </Button>
-          </Jumbotron>
-        </Container>
-      ) : (
-        <>
-          <Container>
-            <Row>
-              <div className="col-md-8 offset-md-2">
-                <Question data={quizz} currentQuestion={currentQuestion} />
-
-                <Answers
-                  data={quizz}
-                  currentQuestion={currentQuestion}
-                  handleAnswerClick={handleAnswerClick}
-                />
-              </div>
-            </Row>
+              <Button variant="secondary" size="lg" onClick={handleStart}>
+                Try another Level
+              </Button>
+              <Button
+                className="btn-brown"
+                size="lg m-2"
+                onClick={handleTryAgain}
+              >
+                Try again
+              </Button>
+            </Jumbotron>
           </Container>
-        </>
-      )}
-    </div>
+        ) : (
+          <>
+            <Container>
+              <Row>
+                <div className="col-md-8 offset-md-2">
+                  <Question currentQuestion={currentQuestion} />
+
+                  <Answers
+                    data={quizz}
+                    currentQuestion={currentQuestion}
+                    handleAnswerClick={handleAnswerClick}
+                  />
+                </div>
+              </Row>
+            </Container>
+          </>
+        )}
+      </div>
+    </GlobalProvider>
   );
 }
 
