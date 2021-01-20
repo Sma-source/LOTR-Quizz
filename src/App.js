@@ -98,7 +98,6 @@ function App() {
                   <Question currentQuestion={currentQuestion} />
 
                   <Answers
-                    data={quizz}
                     currentQuestion={currentQuestion}
                     handleAnswerClick={handleAnswerClick}
                   />
