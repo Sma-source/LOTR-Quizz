@@ -1,5 +1,5 @@
 import React from "react";
-
+import { GlobalContext } from "./context/GlobalState";
 import Button from "react-bootstrap/Button";
 
 const Answers = ({ data, currentQuestion, handleAnswerClick }) => {
