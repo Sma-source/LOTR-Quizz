@@ -1,9 +1,10 @@
-import React, { createContext, useReducer } from "react";
+import React, { createContext, useReducer, useState } from "react";
+import AppReducer from "./AppReducer";
 
 // Init State
 
 const initialState = {
-  data: [
+  Questionnaire: [
     {
       questionText: "How many Rings of Power have been forged",
       img:
@@ -135,7 +136,10 @@ export const GlobalContext = createContext(initialState);
 // provider component
 
 export const GlobalProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(AppReducer, initialState);
   return (
-    <GlobalContext.Provider value={{ data }}>{children}</GlobalContext.Provider>
+    <GlobalContext.Provider value={{ Questionnaire: state.Questionnaire }}>
+      {children}
+    </GlobalContext.Provider>
   );
 };
