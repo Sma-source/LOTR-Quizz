@@ -102,7 +102,7 @@ function App() {
           <Container>
             <Row>
               <div className="col-md-8 offset-md-2">
-                <Question currentQuestion={currentQuestion} />
+                <Question />
 
                 <Answers
                   currentQuestion={currentQuestion}
