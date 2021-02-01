@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./index.css";
 import data from "./data";
 import Question from "./Question";
@@ -10,9 +10,11 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Row from "react-bootstrap/Row";
 import Levels from "./Levels";
 import { GlobalProvider } from "./context/GlobalState";
+import { GlobalContext } from "./context/GlobalState";
 
 function App() {
-  const [quizz, setQuizz] = useState(data);
+  const { Questionnaire } = useContext(GlobalContext);
+  const [quizz, setQuizz] = useState(Questionnaire);
 
   const [start, setStart] = useState(true);
 
@@ -28,7 +30,7 @@ function App() {
     type: "",
   });
   const filterQuizz = (difficulties) => {
-    const newQuizz = data.filter(
+    const newQuizz = Questionnaire.filter(
       (datas) => datas.difficulties === difficulties
     );
     setQuizz(newQuizz);
