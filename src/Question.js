@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { useGlobalContext } from "./context/GlobalState";
 
-const Question = ({ currentQuestion }) => {
-  const { quizz } = useGlobalContext();
+const Question = () => {
+  const { quizz, currentQuestion } = useGlobalContext();
   return (
     <>
       <div className="text-center pt-3">
