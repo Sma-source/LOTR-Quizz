@@ -16,7 +16,6 @@ function App() {
     showScore,
     quizz,
     start,
-    filterQuizz,
     handleTryAgain,
     handleStart,
   } = useGlobalContext();
