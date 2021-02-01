@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { GlobalContext } from "./context/GlobalState";
+import { useGlobalContext } from "./context/GlobalState";
 
 const Question = ({ currentQuestion }) => {
-  const { Questionnaire } = useContext(GlobalContext);
+  const { quizz } = useGlobalContext();
   return (
     <>
       <div className="text-center pt-3">
@@ -10,7 +10,7 @@ const Question = ({ currentQuestion }) => {
           <img
             className="img-fluid rounded"
             width="500"
-            src={Questionnaire[currentQuestion].img}
+            src={quizz[currentQuestion].img}
             alt=""
           />
         </div>
@@ -18,9 +18,7 @@ const Question = ({ currentQuestion }) => {
           <span className="text-white">Question {currentQuestion + 1}</span>
         </div>
         <div className="questions-wrapper">
-          <h2 className="questions">
-            {Questionnaire[currentQuestion].questionText} ?
-          </h2>
+          <h2 className="questions">{quizz[currentQuestion].questionText} ?</h2>
         </div>
       </div>
     </>

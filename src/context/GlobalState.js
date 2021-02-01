@@ -143,7 +143,7 @@ const AppProvider = ({ children }) => {
   const [score, setScore] = useState(0);
 
   const filterQuizz = (difficulties) => {
-    const newQuizz = Questionnaire.filter(
+    const newQuizz = quizz.filter(
       (datas) => datas.difficulties === difficulties
     );
     setQuizz(newQuizz);
@@ -180,6 +180,7 @@ const AppProvider = ({ children }) => {
         start,
         currentQuestion,
         showScore,
+        score,
         filterQuizz,
         handleAnswerClick,
         handleTryAgain,
