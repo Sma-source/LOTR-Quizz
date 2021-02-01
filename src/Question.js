@@ -8,8 +8,7 @@ const Question = () => {
       <div className="text-center pt-3">
         <div className="question-img">
           <img
-            className="img-fluid rounded"
-            width="500"
+            className="img-fluid rounded img-quizz"
             src={quizz[currentQuestion].img}
             alt=""
           />
