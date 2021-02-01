@@ -104,10 +104,7 @@ function App() {
               <div className="col-md-8 offset-md-2">
                 <Question />
 
-                <Answers
-                  currentQuestion={currentQuestion}
-                  handleAnswerClick={handleAnswerClick}
-                />
+                <Answers />
               </div>
             </Row>
           </Container>
