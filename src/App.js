@@ -73,7 +73,7 @@ function App() {
   return (
     <div className="App">
       {start ? (
-        <Levels filterQuizz={filterQuizz} />
+        <Levels />
       ) : showScore ? (
         <Container className="p-3 d-flex align-items-center min-vh-100">
           <Jumbotron className="score text-center mx-auto">
