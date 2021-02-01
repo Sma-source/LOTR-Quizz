@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { useGlobalContext } from "./context/GlobalState";
 import Button from "react-bootstrap/Button";
 
-const Answers = ({ currentQuestion, handleAnswerClick }) => {
-  const { quizz } = useGlobalContext();
+const Answers = () => {
+  const { quizz, currentQuestion, handleAnswerClick } = useGlobalContext();
   return (
     <>
       <div className="test text-center">
