@@ -1,8 +1,8 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import { useGlobalContext } from "./context/GlobalState";
 import Button from "react-bootstrap/Button";
-const Levels = ({ filterQuizz }) => {
-  const { quizz } = useGlobalContext();
+const Levels = () => {
+  const { quizz, filterQuizz } = useGlobalContext();
   const allLevels = [...new Set(quizz.map((datas) => datas.difficulties))];
   const [levels, setLevels] = useState(allLevels);
   return (
