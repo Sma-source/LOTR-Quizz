@@ -1,6 +1,6 @@
-import React, { useState, useContext } from "react";
+import React from "react";
 import "./index.css";
-import data from "./data";
+
 import Question from "./Question";
 import Answers from "./Answers";
 import Alert from "./Alert";
@@ -16,9 +16,7 @@ function App() {
     showScore,
     quizz,
     start,
-    currentQuestion,
     filterQuizz,
-    handleAnswerClick,
     handleTryAgain,
     handleStart,
   } = useGlobalContext();
