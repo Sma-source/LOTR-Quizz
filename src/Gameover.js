@@ -1,5 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "./context/GlobalState";
+import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Jumbotron from "react-bootstrap/Jumbotron";
 const Gameover = () => {
