@@ -1,7 +1,7 @@
 import React from "react";
-
+import { useGlobalContext } from "./context/GlobalState";
 const Gameover = () => {
-  return <div></div>;
+  return <></>;
 };
 
 export default Gameover;
