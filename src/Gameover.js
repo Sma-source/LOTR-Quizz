@@ -1,6 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "./context/GlobalState";
 import Button from "react-bootstrap/Button";
+import Jumbotron from "react-bootstrap/Jumbotron";
 const Gameover = () => {
   const { quizz, score, handleStart, handleTryAgain } = useGlobalContext();
   return (
