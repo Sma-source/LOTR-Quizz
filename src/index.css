@@ -43,15 +43,28 @@ button:focus,
 .full h1 {
   font-family: "MiddleEarth";
 }
-.btn {
+/* .btn {
   border-radius: 50px !important;
-}
+} */
 
 .text-brown {
   color: rgba(225, 200, 160, 1);
   font-weight: 800;
 }
 
+.btn-custom {
+  background-color: blanchedalmond !important;
+  opacity: 0.9;
+}
+.btn-custom:hover {
+  background-color: blanchedalmond !important;
+  opacity: 1;
+}
+.icon-svg {
+  width: 5rem;
+  margin: 0 1em 0 0;
+  cursor: pointer;
+}
 /* Start Game */
 
 /* Questions Game */

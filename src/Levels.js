@@ -36,7 +36,9 @@ const Levels = () => {
           alt="ring"
           className="img-fluid mt-1"
         />
-        <h3 className="mt-4 mb-3">Select a level to Start The Quizz</h3>
+        <h6 className="mt-4 mb-3 text-muted">
+          Select a level to Start The Quizz
+        </h6>
         {/* {levels.map((level, index) => {
           return (
             <Button
@@ -49,29 +51,30 @@ const Levels = () => {
             </Button>
           );
         })} */}
-        <Button
-          size="lg"
-          className="btn-level btn btn-secondary m-1"
+        {/* <Button
+          size="sm"
+          className="btn-level btn btn-custom  m-1"
           onClick={() => filterQuizz("Easy")}
         >
-          <FrodonSvg width="40" />
-        </Button>
+        </Button> */}
+        <FrodonSvg
+          className="icon-svg"
+          alt="frodon"
+          onClick={() => filterQuizz("Easy")}
+        />
 
-        <Button
-          size="lg"
-          className="btn-level btn btn-secondary m-1"
+        {/* <Button
+          size="sm"
+          className="btn-level btn btn-custom  m-1"
           onClick={() => filterQuizz("Medium")}
         >
-          <LegolasSvg width="40" />
-        </Button>
+        </Button> */}
+        <LegolasSvg
+          className="icon-svg"
+          onClick={() => filterQuizz("Medium")}
+        />
 
-        <Button
-          size="lg"
-          className="btn-level btn btn-secondary m-1"
-          onClick={() => filterQuizz("Hard")}
-        >
-          <GandalfSvg width="40" />
-        </Button>
+        <GandalfSvg className="icon-svg" onClick={() => filterQuizz("Hard")} />
       </div>
     </section>
   );
