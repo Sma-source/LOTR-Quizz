@@ -2,7 +2,13 @@ import * as React from "react";
 
 function GandalfSvg(props) {
   return (
-    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg
+      aria-labelledby="svg2title"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <title id="svg2title">Gandalf</title>
       <path
         d="M33.905 23.559c2.888-.61 6.714-2.656 7.304-3.616.59-.959-1.751-2.29-3.49-2.93-1.888-.694-6.971-2.477-7.266-3.408-.294-.93-2.21-4.332-3.388-6.338S24 5.61 24 5.61s-1.886-.349-3.065 1.657-3.094 5.408-3.388 6.338c-.295.93-5.378 2.714-7.266 3.408-1.739.64-4.08 1.971-3.49 2.93.59.96 4.659 3.157 7.547 3.767"
         fill="#e1e5d6"
