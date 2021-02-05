@@ -137,6 +137,17 @@ const initialState = [
       { answerText: "Ainur", isCorrect: false },
     ],
   },
+  {
+    questionText: "Which race of beings did Sauron use to be a member of?",
+    img: "https://media.giphy.com/media/Ai8GT3SyJCDx6/giphy.gif",
+    difficulties: "Hard",
+    answerOptions: [
+      { answerText: "Elves", isCorrect: false },
+      { answerText: "Men", isCorrect: false },
+      { answerText: "Maiar", isCorrect: true },
+      { answerText: "Ainur", isCorrect: false },
+    ],
+  },
 ];
 
 // create context
