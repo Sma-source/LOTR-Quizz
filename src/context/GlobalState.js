@@ -125,6 +125,18 @@ const initialState = [
       { answerText: "A phial of light", isCorrect: true },
     ],
   },
+
+  {
+    questionText: "Which race of beings did Sauron use to be a member of?",
+    img: "https://media.giphy.com/media/Ai8GT3SyJCDx6/giphy.gif",
+    difficulties: "Medium",
+    answerOptions: [
+      { answerText: "Elves", isCorrect: false },
+      { answerText: "Men", isCorrect: false },
+      { answerText: "Maiar", isCorrect: true },
+      { answerText: "Ainur", isCorrect: false },
+    ],
+  },
 ];
 
 // create context
@@ -169,8 +181,11 @@ const AppProvider = ({ children }) => {
   };
 
   const handleStart = () => {
+    setShowScore(false);
+    setCurrentQuestion(0);
+    setScore(0);
+    setQuizz(initialState); //need to setQuizz to initialstate after filter level
     setStart(true);
-    handleTryAgain();
   };
 
   return (
