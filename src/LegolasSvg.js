@@ -2,7 +2,13 @@ import * as React from "react";
 
 function LegolasSvg(props) {
   return (
-    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg
+      aria-labelledby="svg3title"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <title id="svg3title">Legolas</title>
       <path
         fill="#a67358"
         d="M37.02 22.528l-1.53.866-.793-1.569 1.181-3.905.87 1.315 1.453-.612z"
