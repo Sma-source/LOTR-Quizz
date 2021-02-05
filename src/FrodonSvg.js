@@ -2,7 +2,14 @@ import * as React from "react";
 
 function FrodonSvg(props) {
   return (
-    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg
+      aria-labelledby="svg1title"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <title id="svg1title">Frodon</title>
+      d
       <path
         d="M13.834 30.45c-3.042.88-5.434 2.853-6.487 5.345l-1.563 3.754s17.46 6.522 36.432.043l-1.563-3.754a7.316 7.316 0 00-.617-1.178c-1.063-1.675-2.754-3.012-4.838-3.828h-.01"
         fill="#a67358"
