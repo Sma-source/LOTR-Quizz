@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { useGlobalContext } from "./context/GlobalState";
 import Button from "react-bootstrap/Button";
 const Levels = () => {
-  const { quizz, filterQuizz } = useGlobalContext();
-  const allLevels = [...new Set(quizz.map((datas) => datas.difficulties))];
-  const [levels, setLevels] = useState(allLevels);
+  const { filterQuizz } = useGlobalContext();
+  // const allLevels = [...new Set(quizz.map((datas) => datas.difficulties))];
+  // const [levels, setLevels] = useState(allLevels);
   return (
     <section className="full">
       <div className="box container text-center">
@@ -34,7 +34,7 @@ const Levels = () => {
           className="img-fluid mt-1"
         />
         <h3 className="mt-4 mb-3">Select a level to Start The Quizz</h3>
-        {levels.map((level, index) => {
+        {/* {levels.map((level, index) => {
           return (
             <Button
               size="lg"
@@ -45,7 +45,22 @@ const Levels = () => {
               {level}
             </Button>
           );
-        })}
+        })} */}
+        <Button
+          size="lg"
+          className="btn-level btn btn-secondary m-1"
+          onClick={() => filterQuizz("Easy")}
+        >
+          Easy
+        </Button>
+
+        <Button
+          size="lg"
+          className="btn-level btn btn-secondary m-1"
+          onClick={() => filterQuizz("Medium")}
+        >
+          Medium
+        </Button>
       </div>
     </section>
   );
