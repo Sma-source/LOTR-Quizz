@@ -1,6 +1,9 @@
 import React from "react";
 import { useGlobalContext } from "./context/GlobalState";
 import Button from "react-bootstrap/Button";
+import FrodonSvg from "./FrodonSvg";
+import LegolasSvg from "./LegolasSvg";
+import GandalfSvg from "./GandalfSvg";
 const Levels = () => {
   const { filterQuizz } = useGlobalContext();
   // const allLevels = [...new Set(quizz.map((datas) => datas.difficulties))];
@@ -51,7 +54,7 @@ const Levels = () => {
           className="btn-level btn btn-secondary m-1"
           onClick={() => filterQuizz("Easy")}
         >
-          Easy
+          <FrodonSvg width="40" />
         </Button>
 
         <Button
@@ -59,7 +62,15 @@ const Levels = () => {
           className="btn-level btn btn-secondary m-1"
           onClick={() => filterQuizz("Medium")}
         >
-          Medium
+          <LegolasSvg width="40" />
+        </Button>
+
+        <Button
+          size="lg"
+          className="btn-level btn btn-secondary m-1"
+          onClick={() => filterQuizz("Hard")}
+        >
+          <GandalfSvg width="40" />
         </Button>
       </div>
     </section>
