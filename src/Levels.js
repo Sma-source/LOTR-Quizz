@@ -37,7 +37,7 @@ const Levels = () => {
           className="img-fluid mt-1"
         />
         <h6 className="mt-4 mb-3 text-muted">
-          Select a level to Start The Quizz
+          Select a character to start the Quizz
         </h6>
         {/* {levels.map((level, index) => {
           return (
