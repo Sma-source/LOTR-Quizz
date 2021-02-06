@@ -60,7 +60,7 @@ const Levels = () => {
         <FrodonSvg
           className="icon-svg"
           alt="frodon"
-          onClick={() => filterQuizz("Easy")}
+          onClick={() => filterQuizz("Frodo")}
         />
 
         {/* <Button
@@ -71,10 +71,13 @@ const Levels = () => {
         </Button> */}
         <LegolasSvg
           className="icon-svg"
-          onClick={() => filterQuizz("Medium")}
+          onClick={() => filterQuizz("Legolas")}
         />
 
-        <GandalfSvg className="icon-svg" onClick={() => filterQuizz("Hard")} />
+        <GandalfSvg
+          className="icon-svg"
+          onClick={() => filterQuizz("Gandalf")}
+        />
       </div>
     </section>
   );
