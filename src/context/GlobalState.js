@@ -5,51 +5,51 @@ import React, { useState, useContext } from "react";
 
 const initialState = [
   {
-    questionText: "How many Rings of Power have been forged",
+    questionText: "Who is Bilbo Baggins for Frodo ?",
     img:
-      "http://vignette1.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456",
-    difficulties: "Easy",
+      "http://images4.fanpop.com/image/photos/18200000/Bilbo-Baggins-sir-ian-holm-18256983-320-240.gif",
+    difficulties: "Frodo",
     answerOptions: [
-      { answerText: "1", isCorrect: false },
-      { answerText: "3", isCorrect: false },
-      { answerText: "20", isCorrect: true },
-      { answerText: "9", isCorrect: false },
+      { answerText: "His father", isCorrect: false },
+      { answerText: "His cousin", isCorrect: false },
+      { answerText: "His uncle", isCorrect: true },
+      { answerText: "His grandfather", isCorrect: false },
     ],
   },
   {
-    questionText:
-      "Who is committing suicide in the besieged city of Minas Tirith during the Battle of the Pelennor Fields",
+    questionText: "Which metal is the armoured shirt of Frodo made out of?",
     img:
-      "https://www.telegraph.co.uk/content/dam/film/lord-of-the-rings/minas-tirith-medium.jpg",
-    difficulties: "Easy",
+      "https://i.pinimg.com/originals/af/5d/b4/af5db4a29a6e947d540b90732f5819a5.jpg",
+    difficulties: "Frodo",
 
     answerOptions: [
-      { answerText: "Ecthelion II", isCorrect: false },
-      { answerText: "Denethor II", isCorrect: true },
-      { answerText: "Boromir", isCorrect: false },
-      { answerText: "Faramir", isCorrect: false },
+      { answerText: "Silver", isCorrect: false },
+      { answerText: "Mithril", isCorrect: true },
+      { answerText: "Gold", isCorrect: false },
+      { answerText: "Steel", isCorrect: false },
     ],
   },
   {
-    questionText: "What is the name of the fortress of the Dark Lord Sauron",
-    img: "https://live.staticflickr.com/3828/9845910735_29cb554c11_b.jpg",
-    difficulties: "Easy",
+    questionText: "How many meals do hobbit eat in a day ?",
+    img:
+      "https://i.pinimg.com/originals/b0/17/5c/b0175c539f77c7550c8ae6dee3205213.jpg",
+    difficulties: "Frodo",
     answerOptions: [
-      { answerText: "Cirith Ungol", isCorrect: false },
-      { answerText: "Minas Morgul", isCorrect: false },
-      { answerText: "Amon Sûl", isCorrect: false },
-      { answerText: "Barad-dûr", isCorrect: true },
+      { answerText: "9", isCorrect: false },
+      { answerText: "8", isCorrect: false },
+      { answerText: "7", isCorrect: true },
+      { answerText: "5", isCorrect: false },
     ],
   },
   {
-    questionText: "Who was the king of the rohan",
-    img: "https://i.ytimg.com/vi/qByDVgc8R6E/maxresdefault.jpg",
-    difficulties: "Easy",
+    questionText: "What is Bilbo’s home called?",
+    img: "https://i.ytimg.com/vi/Hms5pQdr3z4/hqdefault.jpg",
+    difficulties: "Frodo",
     answerOptions: [
-      { answerText: "Théoden", isCorrect: true },
-      { answerText: "Théodred", isCorrect: false },
-      { answerText: "Aragorn", isCorrect: false },
-      { answerText: "Éomer", isCorrect: false },
+      { answerText: "Bag End", isCorrect: true },
+      { answerText: "Bag hill", isCorrect: false },
+      { answerText: "Bag Shot", isCorrect: false },
+      { answerText: "Overhill", isCorrect: false },
     ],
   },
 
@@ -57,7 +57,7 @@ const initialState = [
     questionText:
       "What was Gollum name befored he was corrupted by the One ring",
     img: "https://lauralzimmerman.files.wordpress.com/2015/04/gollum.gif",
-    difficulties: "Easy",
+    difficulties: "Frodo",
     answerOptions: [
       { answerText: "Smog", isCorrect: false },
       { answerText: "Déagol", isCorrect: false },
@@ -70,7 +70,7 @@ const initialState = [
     questionText: "How many are the Black Riders also known as The Nazgûl",
     img:
       "http://i1.wp.com/31.media.tumblr.com/0b3b0f3d7bc886f51a2a08dbb660c2bf/tumblr_ml67l0szs71rnvb0co1_500.gif?resize=428%2C231",
-    difficulties: "Easy",
+    difficulties: "Frodo",
     answerOptions: [
       { answerText: "7", isCorrect: false },
       { answerText: "20", isCorrect: false },
@@ -82,7 +82,7 @@ const initialState = [
     questionText: "What creature Gandalf faces in the mines of Moria",
     img:
       "https://64.media.tumblr.com/ddaeec5b5e078707fe454e848c908ff3/tumblr_pvx9rrR9jl1rrkahjo7_500.gif",
-    difficulties: "Easy",
+    difficulties: "Gandalf",
     answerOptions: [
       { answerText: "Sauron", isCorrect: false },
       { answerText: "A Dragon", isCorrect: false },
@@ -94,7 +94,7 @@ const initialState = [
     questionText: "What is the name of the inn where Frodo first met Strider",
     img:
       "https://64.media.tumblr.com/ac7e5228fa303ac42dfc2893a42e6426/tumblr_n30bqx2azQ1tvizo2o1_500.gif",
-    difficulties: "Easy",
+    difficulties: "Frodo",
     answerOptions: [
       { answerText: "The Dancing Pony", isCorrect: false },
       { answerText: "The Prancing Pony", isCorrect: true },
@@ -103,21 +103,23 @@ const initialState = [
     ],
   },
   {
-    questionText: "What is the symbol of Saruman ?",
-    img: "https://media1.giphy.com/media/4NQ9mR6sh8LoA/giphy.gif",
-    difficulties: "Easy",
+    questionText:
+      "What is the name of Frodo’s sword that glows blue when orcs are near? ",
+    img:
+      "http://static2.wikia.nocookie.net/__cb20091230025950/lotr/images/0/04/Glowingsting2.png",
+    difficulties: "Frodo",
     answerOptions: [
-      { answerText: "A white hand", isCorrect: true },
-      { answerText: "A black hand", isCorrect: false },
-      { answerText: "A red eyes", isCorrect: false },
-      { answerText: "A red hand", isCorrect: false },
+      { answerText: "Sting", isCorrect: true },
+      { answerText: "Anduin", isCorrect: false },
+      { answerText: "Earendil", isCorrect: false },
+      { answerText: "Spur", isCorrect: false },
     ],
   },
   {
     questionText:
       "What gift give Galadriel to Frodo, before the Fellowship departed from Lothlórien ?",
     img: "https://media.giphy.com/media/Ai8GT3SyJCDx6/giphy.gif",
-    difficulties: "Easy",
+    difficulties: "Frodo",
     answerOptions: [
       { answerText: "Three strands of hair", isCorrect: false },
       { answerText: "A rope", isCorrect: false },
@@ -127,25 +129,66 @@ const initialState = [
   },
 
   {
-    questionText: "Which race of beings did Sauron use to be a member of?",
-    img: "https://media.giphy.com/media/Ai8GT3SyJCDx6/giphy.gif",
-    difficulties: "Medium",
+    questionText:
+      "Which fake name does Frodo choose for himself after departing from the Shire?",
+    img:
+      "http://images2.fanpop.com/images/quiz/65554_1222130020130_386_300.jpg",
+    difficulties: "Frodo",
     answerOptions: [
-      { answerText: "Elves", isCorrect: false },
-      { answerText: "Men", isCorrect: false },
-      { answerText: "Maiar", isCorrect: true },
-      { answerText: "Ainur", isCorrect: false },
+      { answerText: "Mr. Smallhill", isCorrect: false },
+      { answerText: "Mr. Underhill", isCorrect: true },
+      { answerText: "Mr. Smallfoot", isCorrect: false },
+      { answerText: "Mr. Took ", isCorrect: false },
     ],
   },
   {
-    questionText: "Which race of beings did Sauron use to be a member of?",
-    img: "https://media.giphy.com/media/Ai8GT3SyJCDx6/giphy.gif",
-    difficulties: "Hard",
+    questionText: "What is the Elvish (Sindarin) word for friend?",
+    img:
+      "https://thumbs.videogamer.com/PjFer13SUqxvT8FSh2AV3c0e-w0=/320x180/smart/filters:no_upscale()/https://s.videogamer.com/meta/a8d8/review1614_240x180.jpg",
+    difficulties: "Gandalf",
     answerOptions: [
-      { answerText: "Elves", isCorrect: false },
-      { answerText: "Men", isCorrect: false },
-      { answerText: "Maiar", isCorrect: true },
-      { answerText: "Ainur", isCorrect: false },
+      { answerText: "Coth", isCorrect: false },
+      { answerText: "Minn", isCorrect: false },
+      { answerText: "Gurth ", isCorrect: false },
+      { answerText: "Mellon", isCorrect: true },
+    ],
+  },
+  {
+    questionText: "Who has Gandalf found in the dungeons of Dol Guldur ?",
+    img:
+      "http://3.bp.blogspot.com/-GNX1ig4m1jQ/UcJEpBxv4VI/AAAAAAAABEA/rEp7JJUybvY/s1600/Dol+Guldur+(2).jpg",
+    difficulties: "Gandalf",
+    answerOptions: [
+      { answerText: "Balin", isCorrect: false },
+      { answerText: "Thrain II", isCorrect: true },
+      { answerText: "A Nazgul", isCorrect: false },
+      { answerText: "Morinehtar", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "What is Gandalf's name in Sindarin ?",
+    img:
+      "https://64.media.tumblr.com/579266a25d44561af3653390c8448d63/tumblr_mma1m7lq031rnfkcbo8_250.gif",
+    difficulties: "Gandalf",
+    answerOptions: [
+      { answerText: "Tharkûn", isCorrect: false },
+      { answerText: "Olórin", isCorrect: false },
+      { answerText: "Mithrandir", isCorrect: true },
+      { answerText: "Gandalf the White", isCorrect: false },
+    ],
+  },
+
+  {
+    questionText:
+      "In the mines of moria, who accidentally knocks a skeleton into a well ?",
+    img:
+      "https://i.pinimg.com/originals/b8/74/0e/b8740edfcaa2c7adc62f0cea2cb7e2cd.gif",
+    difficulties: "Gandalf",
+    answerOptions: [
+      { answerText: "Pippin", isCorrect: true },
+      { answerText: "Merry", isCorrect: false },
+      { answerText: "Frodo", isCorrect: false },
+      { answerText: "Sam", isCorrect: false },
     ],
   },
 ];
