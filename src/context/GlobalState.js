@@ -179,6 +179,18 @@ const initialState = [
   },
 
   {
+    questionText: "What ring is Gandalf wearing ?",
+    img:
+      "https://vignette.wikia.nocookie.net/tolkien/images/3/3d/Gandalf_with_Narya.jpg/revision/latest?cb=20160213164220&path-prefix=it",
+    difficulties: "Gandalf",
+    answerOptions: [
+      { answerText: "Vilya", isCorrect: false },
+      { answerText: "Narya", isCorrect: true },
+      { answerText: "Nenya", isCorrect: false },
+      { answerText: "Menya", isCorrect: false },
+    ],
+  },
+  {
     questionText:
       "In the mines of moria, who accidentally knocks a skeleton into a well ?",
     img:
@@ -189,6 +201,18 @@ const initialState = [
       { answerText: "Merry", isCorrect: false },
       { answerText: "Frodo", isCorrect: false },
       { answerText: "Sam", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "How many wizards inhabit middle earth ?",
+    img:
+      "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F_26CFEHYphXI%2FSRspXlYengI%2FAAAAAAAAAys%2FTdIE5uaqEWc%2Fs320%2Fgandalfsar.jpg&f=1&nofb=1",
+    difficulties: "Gandalf",
+    answerOptions: [
+      { answerText: "2", isCorrect: false },
+      { answerText: "3", isCorrect: false },
+      { answerText: "4", isCorrect: false },
+      { answerText: "5", isCorrect: true },
     ],
   },
 ];
