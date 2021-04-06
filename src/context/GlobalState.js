@@ -215,6 +215,18 @@ const initialState = [
       { answerText: "5", isCorrect: true },
     ],
   },
+  {
+    questionText: "Who delivered Gandalf from the pinnacle of orthanc ?",
+    img:
+      "https://static.wikia.nocookie.net/lotr/images/f/f2/LOTR_mega-eagle.jpg/revision/latest/scale-to-width-down/397?cb=20140217162312",
+    difficulties: "Gandalf",
+    answerOptions: [
+      { answerText: "Landroval", isCorrect: false },
+      { answerText: "Gwaihir", isCorrect: true },
+      { answerText: "Meneldor", isCorrect: false },
+      { answerText: "Beren", isCorrect: false },
+    ],
+  },
 ];
 
 // create context
