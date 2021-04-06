@@ -227,6 +227,18 @@ const initialState = [
       { answerText: "Beren", isCorrect: false },
     ],
   },
+  {
+    questionText: "What is Gandalf's horse called?",
+    img:
+      "https://static.wikia.nocookie.net/lotr/images/2/2f/Shadowfax2.jpg/revision/latest/scale-to-width-down/450?cb=20051216163411",
+    difficulties: "Gandalf",
+    answerOptions: [
+      { answerText: "Arod", isCorrect: false },
+      { answerText: "Hasufel", isCorrect: false },
+      { answerText: "Snowmane", isCorrect: false },
+      { answerText: "Shadowfax", isCorrect: true },
+    ],
+  },
 ];
 
 // create context
