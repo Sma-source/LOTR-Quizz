@@ -218,7 +218,7 @@ const initialState = [
   {
     questionText: "Who delivered Gandalf from the pinnacle of orthanc ?",
     img:
-      "https://static.wikia.nocookie.net/lotr/images/f/f2/LOTR_mega-eagle.jpg/revision/latest/scale-to-width-down/397?cb=20140217162312",
+      "https://static.wikia.nocookie.net/lotr/images/f/f2/LOTR_mega-eagle.jpg",
     difficulties: "Gandalf",
     answerOptions: [
       { answerText: "Landroval", isCorrect: false },
@@ -229,14 +229,25 @@ const initialState = [
   },
   {
     questionText: "What is Gandalf's horse called?",
-    img:
-      "https://static.wikia.nocookie.net/lotr/images/2/2f/Shadowfax2.jpg/revision/latest/scale-to-width-down/450?cb=20051216163411",
+    img: "https://static.wikia.nocookie.net/lotr/images/2/2f/Shadowfax2.jpg",
     difficulties: "Gandalf",
     answerOptions: [
       { answerText: "Arod", isCorrect: false },
       { answerText: "Hasufel", isCorrect: false },
       { answerText: "Snowmane", isCorrect: false },
       { answerText: "Shadowfax", isCorrect: true },
+    ],
+  },
+  {
+    questionText: "How many times has Gandalf 'died'?",
+    img:
+      "http://www.celebritydiagnosis.com/wp-content/uploads/2012/12/Ian-McKellen-as-Gandalf-The-Grey.jpeg",
+    difficulties: "Gandalf",
+    answerOptions: [
+      { answerText: "1", isCorrect: false },
+      { answerText: "2", isCorrect: true },
+      { answerText: "3", isCorrect: false },
+      { answerText: "he does not die", isCorrect: false },
     ],
   },
 ];
