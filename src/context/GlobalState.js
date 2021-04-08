@@ -251,9 +251,9 @@ const initialState = [
     ],
   },
   {
-    questionText: "What the correct translation of Legolas name in English ?",
+    questionText: "What's the correct translation of Legolas name in English ?",
     img: "https://upload.wikimedia.org/wikipedia/en/2/2b/Legolas600ppx.jpg",
-    difficulties: "Gandalf",
+    difficulties: "Legolas",
     answerOptions: [
       { answerText: "Greenbranch", isCorrect: false },
       { answerText: "Goldleaf", isCorrect: false },
@@ -265,7 +265,7 @@ const initialState = [
     questionText: "Which realm does he come from ?",
     img:
       "https://i.pinimg.com/originals/5f/4c/33/5f4c332ef522a1287c46365712ad4b13.gif",
-    difficulties: "Gandalf",
+    difficulties: "Legolas",
     answerOptions: [
       { answerText: "Rivendell", isCorrect: false },
       { answerText: "Woodland", isCorrect: true },
