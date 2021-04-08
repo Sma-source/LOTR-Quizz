@@ -262,7 +262,7 @@ const initialState = [
     ],
   },
   {
-    questionText: "Which realm does he come from ?",
+    questionText: "Where does Legolas come from ?",
     img:
       "https://i.pinimg.com/originals/5f/4c/33/5f4c332ef522a1287c46365712ad4b13.gif",
     difficulties: "Legolas",
