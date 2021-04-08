@@ -261,6 +261,18 @@ const initialState = [
       { answerText: "Greenleaf", isCorrect: true },
     ],
   },
+  {
+    questionText: "Which realm does he come from ?",
+    img:
+      "https://i.pinimg.com/originals/5f/4c/33/5f4c332ef522a1287c46365712ad4b13.gif",
+    difficulties: "Gandalf",
+    answerOptions: [
+      { answerText: "Rivendell", isCorrect: false },
+      { answerText: "Woodland", isCorrect: true },
+      { answerText: "Lothlórien", isCorrect: false },
+      { answerText: "Nargothrond", isCorrect: false },
+    ],
+  },
 ];
 
 // create context
