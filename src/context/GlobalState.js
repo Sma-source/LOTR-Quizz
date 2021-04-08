@@ -250,6 +250,17 @@ const initialState = [
       { answerText: "he does not die", isCorrect: false },
     ],
   },
+  {
+    questionText: "What the correct translation of Legolas name in English ?",
+    img: "https://upload.wikimedia.org/wikipedia/en/2/2b/Legolas600ppx.jpg",
+    difficulties: "Gandalf",
+    answerOptions: [
+      { answerText: "Greenbranch", isCorrect: false },
+      { answerText: "Goldleaf", isCorrect: false },
+      { answerText: "Yellowbranch", isCorrect: false },
+      { answerText: "Greenleaf", isCorrect: true },
+    ],
+  },
 ];
 
 // create context
