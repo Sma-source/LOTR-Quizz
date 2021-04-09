@@ -285,6 +285,31 @@ const initialState = [
       { answerText: "Thranduil", isCorrect: true },
     ],
   },
+  {
+    questionText: " What is the name of Legolas' father ?",
+    img:
+      "https://static.wikia.nocookie.net/lotr/images/f/fe/TheElvenking_by_Ulla_Thynell.jpg",
+    difficulties: "Legolas",
+    answerOptions: [
+      { answerText: "Elrond", isCorrect: false },
+      { answerText: "Cirdan", isCorrect: false },
+      { answerText: "Thrain", isCorrect: false },
+      { answerText: "Thranduil", isCorrect: true },
+    ],
+  },
+  {
+    questionText:
+      "In the Battle of Helm's Deep,Legolas and Gimli engaged in an Orc-slaying contest, how many orcs did Legolas kill ?",
+    img:
+      "https://static.wikia.nocookie.net/lotr/images/f/fe/TheElvenking_by_Ulla_Thynell.jpg",
+    difficulties: "Legolas",
+    answerOptions: [
+      { answerText: "42", isCorrect: true },
+      { answerText: "43", isCorrect: false },
+      { answerText: "44", isCorrect: false },
+      { answerText: "45", isCorrect: false },
+    ],
+  },
 ];
 
 // create context
