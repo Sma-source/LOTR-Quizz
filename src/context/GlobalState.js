@@ -331,9 +331,20 @@ const initialState = [
     difficulties: "Legolas",
     answerOptions: [
       { answerText: "Elrond had summoned him", isCorrect: false },
-      { answerText: "To meet Aragorn", isCorrect: false },
+      { answerText: "He wanted to help destroy the ring ", isCorrect: false },
       { answerText: "He was a messenger for his father", isCorrect: true },
       { answerText: "He lives there", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "What Does Galadriel Give Legolas As A Gift? ?",
+    img: "https://media.giphy.com/media/Ai8GT3SyJCDx6/giphy.gif",
+    difficulties: "Legolas",
+    answerOptions: [
+      { answerText: "A kiss", isCorrect: false },
+      { answerText: "A Galahadrim bow", isCorrect: true },
+      { answerText: "Long knives", isCorrect: false },
+      { answerText: "A rop", isCorrect: false },
     ],
   },
 ];
