@@ -350,7 +350,7 @@ const initialState = [
   {
     questionText:
       "In the movie, While fighting on Pelennor Fields Legolas took down ...",
-    img: "https://media.giphy.com/media/Ai8GT3SyJCDx6/giphy.gif",
+    img: "https://i.ytimg.com/vi/42QbLwvcAaQ/hqdefault.jpg",
     difficulties: "Legolas",
     answerOptions: [
       { answerText: "A Troll ", isCorrect: false },
@@ -362,7 +362,7 @@ const initialState = [
   {
     questionText:
       "After Aragorn died, who did Legolas take with him to the undying lands ? ",
-    img: "https://media.giphy.com/media/Ai8GT3SyJCDx6/giphy.gif",
+    img: "https://i.ytimg.com/vi/fKVlhLTmXec/hqdefault.jpg",
     difficulties: "Legolas",
     answerOptions: [
       { answerText: "Merry", isCorrect: false },
