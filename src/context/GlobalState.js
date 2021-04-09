@@ -312,6 +312,17 @@ const initialState = [
       { answerText: "Celebdil", isCorrect: false },
     ],
   },
+  {
+    questionText: "What is the name of legolas' mother ?",
+    img: "https://upload.wikimedia.org/wikipedia/en/2/2b/Legolas600ppx.jpg",
+    difficulties: "Legolas",
+    answerOptions: [
+      { answerText: "Galadriel", isCorrect: false },
+      { answerText: "Eärwen", isCorrect: false },
+      { answerText: "Celebrian", isCorrect: false },
+      { answerText: "Unknown", isCorrect: true },
+    ],
+  },
 ];
 
 // create context
