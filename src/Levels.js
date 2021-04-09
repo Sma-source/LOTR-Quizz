@@ -1,6 +1,5 @@
 import React from "react";
 import { useGlobalContext } from "./context/GlobalState";
-import Button from "react-bootstrap/Button";
 import FrodonSvg from "./FrodonSvg";
 import LegolasSvg from "./LegolasSvg";
 import GandalfSvg from "./GandalfSvg";
