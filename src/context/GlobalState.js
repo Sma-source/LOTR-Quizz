@@ -347,6 +347,18 @@ const initialState = [
       { answerText: "A rop", isCorrect: false },
     ],
   },
+  {
+    questionText:
+      "After Aragorn died, who did Legolas take with him to the undying lands ? ",
+    img: "https://media.giphy.com/media/Ai8GT3SyJCDx6/giphy.gif",
+    difficulties: "Legolas",
+    answerOptions: [
+      { answerText: "Merry", isCorrect: false },
+      { answerText: "Arwen", isCorrect: false },
+      { answerText: "Gimli", isCorrect: true },
+      { answerText: "Pippin", isCorrect: false },
+    ],
+  },
 ];
 
 // create context
