@@ -301,15 +301,15 @@ const initialState = [
   },
   {
     questionText:
-      "In the Battle of Helm's Deep,Legolas and Gimli engaged in an Orc-slaying contest, how many orcs did Legolas kill ?",
+      "Upon Which Mountain Did Legolas Act As A Scout For The Fellowhip?",
     img:
-      "https://static.wikia.nocookie.net/lotr/images/4/4a/The-two-towers-explosion-helms-deep-2.jpg",
+      "https://d.wattpad.com/story_parts/600623996/images/153f6c595cf39b57632150566250.jpg",
     difficulties: "Legolas",
     answerOptions: [
-      { answerText: "42", isCorrect: true },
-      { answerText: "43", isCorrect: false },
-      { answerText: "44", isCorrect: false },
-      { answerText: "45", isCorrect: false },
+      { answerText: "Methedras", isCorrect: false },
+      { answerText: "Caradhras", isCorrect: true },
+      { answerText: "Calacirya", isCorrect: false },
+      { answerText: "Celebdil", isCorrect: false },
     ],
   },
 ];
