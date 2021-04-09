@@ -290,7 +290,7 @@ const initialState = [
     questionText:
       "In the Battle of Helm's Deep,Legolas and Gimli engaged in an Orc-slaying contest, how many orcs did Legolas kill ?",
     img:
-      "https://static.wikia.nocookie.net/lotr/images/f/fe/TheElvenking_by_Ulla_Thynell.jpg",
+      "https://static.wikia.nocookie.net/lotr/images/4/4a/The-two-towers-explosion-helms-deep-2.jpg",
     difficulties: "Legolas",
     answerOptions: [
       { answerText: "42", isCorrect: true },
