@@ -323,6 +323,19 @@ const initialState = [
       { answerText: "Unknown", isCorrect: true },
     ],
   },
+  {
+    questionText:
+      "Why Was Legolas At Rivendell At The Time Of The Council Of Elrond ?",
+    img:
+      "https://cdn3.whatculture.com/images/2018/12/74f92b0ea337e437-600x338.jpg",
+    difficulties: "Legolas",
+    answerOptions: [
+      { answerText: "Elrond had summoned him", isCorrect: false },
+      { answerText: "To meet Aragorn", isCorrect: false },
+      { answerText: "He was a messenger for his father", isCorrect: true },
+      { answerText: "He lives there", isCorrect: false },
+    ],
+  },
 ];
 
 // create context
