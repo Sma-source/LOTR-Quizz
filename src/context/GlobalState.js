@@ -268,7 +268,7 @@ const initialState = [
     difficulties: "Legolas",
     answerOptions: [
       { answerText: "Rivendell", isCorrect: false },
-      { answerText: "Woodland", isCorrect: true },
+      { answerText: "Mirkwood", isCorrect: true },
       { answerText: "Lothlórien", isCorrect: false },
       { answerText: "Nargothrond", isCorrect: false },
     ],
@@ -286,6 +286,19 @@ const initialState = [
     ],
   },
 
+  {
+    questionText:
+      "In the Battle of Helm's Deep,Legolas and Gimli engaged in an Orc-slaying contest, how many orcs did Legolas kill ?",
+    img:
+      "https://static.wikia.nocookie.net/lotr/images/4/4a/The-two-towers-explosion-helms-deep-2.jpg",
+    difficulties: "Legolas",
+    answerOptions: [
+      { answerText: "42", isCorrect: true },
+      { answerText: "43", isCorrect: false },
+      { answerText: "44", isCorrect: false },
+      { answerText: "45", isCorrect: false },
+    ],
+  },
   {
     questionText:
       "In the Battle of Helm's Deep,Legolas and Gimli engaged in an Orc-slaying contest, how many orcs did Legolas kill ?",
