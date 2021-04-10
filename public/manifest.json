@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Lotr Quizz",
+  "name": "Lotr Quizz App",
   "icons": [
     {
       "src": "favicon.ico",
