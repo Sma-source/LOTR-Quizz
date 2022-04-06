@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# The Lord of The Rings Quizz
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A app made with React, its a simple quiz about the world of the Lord of the Rings.
+Choose your favorite character among Frodo, Legolas and Gandalf and start answering questions.
+
+#
+![alt text](https://www.smainrabhi.com/lotr.png)
 
 ## Available Scripts
 
